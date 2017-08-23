@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup
+        android:id="@+id/rgHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rbHome01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:textColor="@drawable/home_text_color_checked"
+            android:text="首页" />
+        <RadioButton
+            android:id="@+id/rbHome02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:textColor="@drawable/home_text_color_checked"
+            android:text="我的订单" />
+        <RadioButton
+            android:id="@+id/rbHome03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:textColor="@drawable/home_text_color_checked"
+            android:text="成为会员" />
+        <RadioButton
+            android:id="@+id/rbHome04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:textColor="@drawable/home_text_color_checked"
+            android:text="购物车" />
+        <RadioButton
+            android:id="@+id/rbHome05"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:textColor="@drawable/home_text_color_checked"
+            android:text="我的健康水" />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rgHome">
+    </android.support.v4.view.ViewPager>
+</android.support.percent.PercentRelativeLayout>
